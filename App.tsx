@@ -11,6 +11,7 @@ import { ModalDeleteMoviment } from './src/components/atoms/ModalDeleteMoviment'
 import SplashScreen from 'react-native-splash-screen';
 import { ModalMenu } from './src/components/atoms/ModalMenu';
 import { THEME } from './src/theme';
+import { ModalLaunchMovement } from './src/components/atoms/ModalLaunchMovement';
 
 function App(): JSX.Element {
   const state = useStore(store => store);
@@ -51,6 +52,7 @@ function App(): JSX.Element {
       </Background>
       <ModalDeleteMoviment />
       <ModalMenu />
+      <ModalLaunchMovement />
     </QueryClientProvider>
   );
 }
